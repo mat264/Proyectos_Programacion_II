@@ -9,7 +9,7 @@ public class g3_S7 {
         System.out.print("Serie (con el bucle for) hasta " + n + ": ");
         int a = 1, b= 1;
         System.out.print(b + " ");
-        for(int i = 1; i <= n; i++) {
+        for(int i = 1; i < n; i++) {
             a+= 3;
             System.out.print(a + " ");
         }
@@ -22,7 +22,7 @@ public class g3_S7 {
         int a = 1, b= 1;
         System.out.print(b + " ");
         int i = 1;
-        while(i <= n) {
+        while(i < n) {
             a+= 3;
             System.out.print(a + " ");
             i++;
@@ -40,7 +40,7 @@ public class g3_S7 {
             a+= 3;
             System.out.print(a + " ");
             i++;
-        } while(i <= n);
+        } while(i < n);
         System.out.println();
         System.out.println("\n---------------------------");
     }

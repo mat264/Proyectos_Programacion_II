@@ -10,7 +10,7 @@ public class g3_S6 {
         int impar = 0, valest = 1, result = 0;
         int suma = 1;
         System.out.print(valest + " ");
-        for(int i = 1; i <= n; i++) {
+        for(int i = 1; i < n; i++) {
             impar +=2;
             result = valest + impar;
             suma = suma + result ;
@@ -26,7 +26,7 @@ public class g3_S6 {
         int impar = 0, valest = 1, result= 0, suma = 1;
         System.out.print(valest + " ");
         int i = 1;
-        while(i <= n){
+        while(i < n){
             impar +=2;
             result = valest + impar;
             suma = suma + result ;
@@ -48,7 +48,7 @@ public class g3_S6 {
             suma = suma + result ;
             System.out.print(suma + " ");
             i++;
-        }while(i <= n);
+        }while(i < n);
         System.out.println();
         System.out.println("\n---------------------------");
 
