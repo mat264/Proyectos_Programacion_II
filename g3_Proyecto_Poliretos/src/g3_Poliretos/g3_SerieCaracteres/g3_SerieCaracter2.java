@@ -46,10 +46,11 @@ public class g3_SerieCaracter2 {
             do{
                 System.out.print("+");
                 j++;
-            }while(j < n);
+            }while(j < a);
+            System.out.print(" ");
             c = a + b;
             a = b;
-            c = b;
+            b = c;
             i++;
         }while(i < n);
         System.out.println();

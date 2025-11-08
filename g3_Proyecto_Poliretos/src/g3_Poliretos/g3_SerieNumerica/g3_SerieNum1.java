@@ -1,7 +1,6 @@
 package g3_Poliretos.g3_SerieNumerica;
 
 public class g3_SerieNum1 {
-    
     // SERIE 1
     // S1 con bucle for
     public void S1Numerica_for (int n) {
