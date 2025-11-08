@@ -5,8 +5,8 @@ public class g3_SerieNum9 {
     //SERIE 9
     //S9 con el bucle for
 
-    public void S9_for(int n){
-        System.out.println("SECUENCIA 9");
+    public void S9Numerica_for(int n){
+        System.out.println("SECUENCIA NUMERICA #9");
         System.out.print("Serie (con el bucle for) hasta " + n + ": ");
         int a = 1;
         for(int i = 1; i <= n; i++){
@@ -17,7 +17,7 @@ public class g3_SerieNum9 {
     }
 
     //S9 con el bucle while
-    public void S9_while(int n){
+    public void S9Numerica_while(int n){
         System.out.print("Serie (con el bucle while) hasta " + n + ": ");
         int i = 1;
         int a = 1;
@@ -30,7 +30,7 @@ public class g3_SerieNum9 {
     }
 
     //S9 con el bucle do while
-    public void S9_do_while(int n){
+    public void S9Numerica_do_while(int n){
         System.out.print("Serie (con el bucle do while) hasta " + n + ": ");
         int i = 1;
         int a = 1;

@@ -4,8 +4,8 @@ public class g3_SerieNum3 {
     
     // SERIE 3
     // S3 con el bucle for
-    public void S3_for (int n) {
-        System.out.println("SECUENCIA 3");
+    public void S3Numerica_for (int n) {
+        System.out.println("SECUENCIA NUMERICA #3");
         System.out.print("Serie (con el bucle for) hasta " + n + ": ");
         int a = 0, b = 1, c;
         int e = 1;
@@ -20,7 +20,7 @@ public class g3_SerieNum3 {
     }
 
     // S3 con el bucle while
-    public void S3_while (int n) {
+    public void S3Numerica_while (int n) {
         System.out.print("Serie (con el bucle while) hasta " + n + ": ");
         int a = 0, b = 1, c;
         int e = 1;
@@ -37,7 +37,7 @@ public class g3_SerieNum3 {
     }
 
     // S3 con el bucle do while
-    public void S3_do_while (int n) {
+    public void S3Numerica_do_while (int n) {
         System.out.print("Serie (con el bucle do while) hasta " + n + ": ");
         int a = 0, b = 1, c;
         int e = 1;

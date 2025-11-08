@@ -4,8 +4,8 @@ public class g3_SerieNum6 {
     
     // SERIE 6
     //S6 con el bucle for
-    public void S6_for (int n){
-        System.out.println("SECUENCIA 6");
+    public void S6Numerica_for (int n){
+        System.out.println("SECUENCIA NUMERICA #6");
         System.out.print("Serie (con el bucle for) hasta " + n + ": ");
         int impar = 0, valest = 1, result = 0;
         int suma = 1;
@@ -21,7 +21,7 @@ public class g3_SerieNum6 {
     }
 
     //S6 con el bucle while
-    public void S6_while (int n){
+    public void S6Numerica_while (int n){
         System.out.print("Serie (con el bucle while) hasta " + n + ": ");
         int impar = 0, valest = 1, result= 0, suma = 1;
         System.out.print(valest + " ");
@@ -37,7 +37,7 @@ public class g3_SerieNum6 {
     }
 
     //S6 con el bucle do while
-    public void S6_do_while (int n){
+    public void S6Numerica_do_while (int n){
         System.out.print("Serie (con el bucle do while) hasta " + n + ": ");
         int impar = 0, valest = 1, result= 0, suma = 1;
         System.out.print(valest + " ");

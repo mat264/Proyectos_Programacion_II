@@ -3,8 +3,8 @@ package g3_Poliretos.g3_SerieNumerica;
 public class g3_SerieNum12 {
     //SERIE 12
     //Serie 12 con el bucle for
-    public void S12_for(int n){
-        System.out.println("SECUENCIA 12");
+    public void S12Numerica_for(int n){
+        System.out.println("SECUENCIA NUMERICA #12");
         System.out.print("Serie (con el bucle for) hasta " + n + ": ");
         
         int a = 2, b =4;
@@ -19,7 +19,7 @@ public class g3_SerieNum12 {
     }
 
     //Serie 12 con el bucle while
-    public void S12_while (int n){
+    public void S12Numerica_while (int n){
         System.out.print("Serie (con el bucle while) hasta " + n + ": ");
         int a = 2, b = 4, i = 1;
         System.out.print(a + " ");
@@ -33,7 +33,7 @@ public class g3_SerieNum12 {
     }
 
     //Serie 12 con el bucle do while
-    public void S12_do_while(int n){
+    public void S12Numerica_do_while(int n){
         System.out.print("Serie (con el bucle do while) hasta " + n + ": ");
         int a = 2, b = 4, i = 1;
         System.out.print(a + " ");
@@ -43,5 +43,7 @@ public class g3_SerieNum12 {
             System.out.print(a + " ");
             i++;
         }while(i < n);
+        System.out.println();
+        System.out.println("--------------------------------------");
     }
 }

@@ -4,14 +4,13 @@ public class g3_SerieNum5 {
 
     // SERIE 5
     // S5 con bucle for
-    public void S5_for(int n) {
-    System.out.println("SECUENCIA 5");
+    public void S5Numerica_for(int n) {
+    System.out.println("SECUENCIA NUMERICA #5");
     System.out.print("Serie (con el bucle for) de los primeros " + n + " primos: ");
 
-    int count = 0;  // contador de primos encontrados
-    int num = 2;    // número a evaluar
+    int count = 0;  
 
-        for (int i = 0; count < n; i++) {
+        for (int num = 2; count < n; num++) {
             boolean esPrimo = true;
 
             for (int j = 2; j * j <= num; j++) {
@@ -33,7 +32,7 @@ public class g3_SerieNum5 {
 
 
     // S5 con bucle while
-    public void S5_while(int n) {
+    public void S5Numerica_while(int n) {
         System.out.print("Serie (con el bucle while) de los primeros " + n + " primos: ");
         int i = 0, num = 2;
         while (i < n) {
@@ -54,7 +53,7 @@ public class g3_SerieNum5 {
     }
 
     // S5 con bucle do-while
-    public void S5_do_while(int n) {
+    public void S5Numerica_do_while(int n) {
         System.out.print("Serie (con el bucle do while) de los primeros " + n + " primos: ");
         int i = 0, num = 2;
         do {
