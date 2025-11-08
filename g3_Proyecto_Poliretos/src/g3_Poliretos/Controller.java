@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import g3_Poliretos.g3_SerieCaracteres.*;
 import g3_Poliretos.g3_SerieNumerica.*;
+import g3_Poliretos.g3_CadenaDeCaracteres.*;
 
 public class Controller {
     public void inicializar () {
