@@ -1,47 +1,53 @@
 package g3_Poliretos.g3_SerieNumerica;
 
-public class g3_S1 {
+public class g3_SerieNum4 {
     
-    // SERIE 1
-    // S1 con bucle for
-    public void S1_for (int n) {
-        System.out.println("SECUENCIA 1");
-        int a = 0, b = 1, c;
+    // SERIE 4
+    //S4 con el bucle for
+    public void S4_for (int n) {
+        System.out.println("SECUENCIA 4");
         System.out.print("Serie (con el bucle for) hasta " + n + ": ");
+        int a = 0, b = 1, c;
+        int e = 2;
         for (int i = 0; i < n; i++) {
-            System.out.print(a + " ");
+            System.out.print(a + "/"+ e + " ");
             c = a + b;
             a = b;
             b = c;
+            e+= 2;
         }
         System.out.println();
     }
 
-    //S1 con bucle while
-    public void S1_while (int n) {
-        int a = 0, b = 1, c;
-        int i = 0;
+    //S4 con el bucle while
+    public void S4_while (int n) {
         System.out.print("Serie (con el bucle while) hasta " + n + ": ");
+        int a = 0, b = 1, c;
+        int e = 2;
+        int i = 0;
         while (i < n) {
-            System.out.print(a + " ");
+            System.out.print(a + "/"+ e + " ");
             c = a + b;
             a = b;
             b = c;
+            e+= 2;
             i++;
         }
         System.out.println();
     }
 
-    //S1 con bucle do while
-    public void S1_do_while (int n) {
-        int a = 0, b = 1, c;
-        int i = 0;
+    //S4 con el bucle do while
+    public void S4_do_while (int n) {
         System.out.print("Serie (con el bucle do while) hasta " + n + ": ");
+        int a = 0, b = 1, c;
+        int e = 2;
+        int i = 0;
         do {
-            System.out.print(a + " ");
+            System.out.print(a + "/"+ e + " ");
             c = a + b;
             a = b;
             b = c;
+            e+= 2;
             i++;
         } while (i < n);
         System.out.println();

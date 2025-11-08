@@ -1,6 +1,6 @@
 package g3_Poliretos.g3_SerieNumerica;
 
-public class g3_S2 {
+public class g3_SerieNum2 {
     // SERIE 2
     //S2 con el bucle for
     public void S2_for (int n) {

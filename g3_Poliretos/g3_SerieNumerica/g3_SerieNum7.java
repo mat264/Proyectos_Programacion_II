@@ -1,6 +1,6 @@
 package g3_Poliretos.g3_SerieNumerica;
 
-public class g3_S7 {
+public class g3_SerieNum7 {
     
     // SERIE 7
     //S7 con el bucle for
