@@ -5,7 +5,9 @@ import java.util.Scanner;
 import g3_Poliretos.g3_SerieCaracteres.*;
 import g3_Poliretos.g3_SerieNumerica.*;
 import g3_Poliretos.g3_CadenaDeCaracteres.*;
+
 import g3_Poliretos.g3_Figuras.*;
+
 
 public class Controller {
     public void inicializar () {
@@ -19,6 +21,7 @@ public class Controller {
        System.out.println("Mejía.Mathias");
        System.out.println("Molina.Jhanavi");
        System.out.println("---------------------------");
+
 
        
         int n;
@@ -105,6 +108,7 @@ public class Controller {
         serieCaracter2.S2Caracter_while(n);
         serieCaracter2.S2Caracter_do_while(n);
 
+
         System.out.println("--------- FIGURAS -----------");
         g3_Figuras figura = new g3_Figuras();
         figura.g3_figuraF1(n);
@@ -126,5 +130,80 @@ public class Controller {
         figura.g3_figuraF17(n);
         figura.g3_figuraF18(n);
         figura.g3_figuraF19(n);
+
+        g3_SerieCaracter3 serieCaracter3 = new g3_SerieCaracter3();
+        serieCaracter3.S3Caracter_for(n);
+        serieCaracter3.S3Caracter_while(n);
+        serieCaracter3.S3Caracter_do_while(n);
+
+        g3_SerieCaracter4 serieCaracter4 = new g3_SerieCaracter4();
+        serieCaracter4.S4Caracter_for(n);
+        serieCaracter4.S4Caracter_while(n);
+        serieCaracter4.S4Caracter_do_while(n);
+
+        g3_SerieCaracter5 serieCaracter5 = new g3_SerieCaracter5();
+        serieCaracter5.S5Caracter_for(n);
+        serieCaracter5.S5Caracter_while(n);
+        serieCaracter5.S5Caracter_do_while(n);
+
+        g3_SerieCaracter6 serieCaracter6 = new g3_SerieCaracter6();
+        serieCaracter6.S6Caracter_for(n);
+        serieCaracter6.S6Caracter_while(n);
+        serieCaracter6.S6Caracter_do_while(n);
+
+        g3_SerieCaracter7 serieCaracter7 = new g3_SerieCaracter7();
+        serieCaracter7.S7Caracter_for(n);
+        serieCaracter7.S7Caracter_while(n);
+        serieCaracter7.S7Caracter_do_while(n);
+
+        g3_SerieCaracter8 serieCaracter8 = new g3_SerieCaracter8();
+        serieCaracter8.S8Caracter_for(n);
+        serieCaracter8.S8Caracter_while(n);
+        serieCaracter8.S8Caracter_do_while(n);
+
+        g3_SerieCaracter9 serieCaracter9 = new g3_SerieCaracter9();
+        serieCaracter9.S9Caracter_for(n);
+        serieCaracter9.S9Caracter_while(n);
+        serieCaracter9.S9Caracter_do_while(n);
+
+        g3_SerieCaracter10 serieCaracter10 = new g3_SerieCaracter10();
+        serieCaracter10.S10Caracter_for(n);
+        serieCaracter10.S10Caracter_while(n);
+        serieCaracter10.S10Caracter_do_while(n);
+
+
+        System.out.println("----- CADENA DE CARACTERES -----");
+
+        g3_CadenaDeCaracteres1 cadena1 = new g3_CadenaDeCaracteres1();
+        cadena1.Cadena1();
+        
+        g3_CadenaDeCaracteres2 cadena2 = new g3_CadenaDeCaracteres2();
+        cadena2.Cadena2();
+        
+        g3_CadenaDeCaracteres3 cadena3 = new g3_CadenaDeCaracteres3();
+        cadena3.Cadena3(ingresoDatos);  
+
+        g3_CadenaDeCaracteres4 cadena4 = new g3_CadenaDeCaracteres4();
+        cadena4.Cadena4(ingresoDatos);
+
+        g3_CadenaDeCaracteres5 cadena5 = new g3_CadenaDeCaracteres5();
+        cadena5.Cadena5(ingresoDatos);
+
+        g3_CadenaDeCaracteres6 cadena6 = new g3_CadenaDeCaracteres6();
+        cadena6.Cadena6(ingresoDatos);
+
+        g3_CadenaDeCaracteres7 cadena7 = new g3_CadenaDeCaracteres7();
+        cadena7.Cadena7(ingresoDatos);
+        
+        g3_CadenaDeCaracteres8 cadena8 = new g3_CadenaDeCaracteres8();
+        cadena8.Cadena8(ingresoDatos);
+
+        g3_CadenaDeCaracteres9 cadena9 = new g3_CadenaDeCaracteres9();
+        cadena9.Cadena9(ingresoDatos);
+
+
+
+        ingresoDatos.close(); 
+
     }
 }
