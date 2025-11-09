@@ -115,6 +115,12 @@ public class Controller {
 
         g3_CadenaDeCaracteres7 cadena7 = new g3_CadenaDeCaracteres7();
         cadena7.Cadena7(ingresoDatos);
+        
+        g3_CadenaDeCaracteres8 cadena8 = new g3_CadenaDeCaracteres8();
+        cadena8.Cadena8(ingresoDatos);
+
+        g3_CadenaDeCaracteres9 cadena9 = new g3_CadenaDeCaracteres9();
+        cadena9.Cadena9(ingresoDatos);
 
 
 
