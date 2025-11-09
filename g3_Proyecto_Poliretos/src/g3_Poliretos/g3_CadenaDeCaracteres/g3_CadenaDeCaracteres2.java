@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class g3_CadenaDeCaracteres2 {
     public void Cadena2() {
         Scanner ingresoDatos = new Scanner(System.in);
-
         System.out.println("Ingrese una cadena de caracteres: ");
         String cadena = ingresoDatos.nextLine();
+
 
         // Conteo con FOR
         int contadorFor = 0;
@@ -44,6 +44,7 @@ public class g3_CadenaDeCaracteres2 {
             } while (k < cadena.length());
         }
         System.out.println("Conteo con DO WHILE: tiene " + contadorDoWhile + " letras");
-        ingresoDatos.close(); 
+        // Do not close Scanner(System.in) here — closing it will close System.in
+        // and cause NoSuchElementException in subsequent reads.
     }
 }

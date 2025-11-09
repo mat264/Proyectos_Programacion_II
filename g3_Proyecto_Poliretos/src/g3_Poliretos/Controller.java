@@ -22,22 +22,17 @@ public class Controller {
        System.out.println("Molina.Jhanavi");
        System.out.println("---------------------------");
 
+           System.out.print("Ingrese el numero de terminos a generar: ");
+       int n = ingresoDatos.nextInt();
+       ingresoDatos.nextLine(); 
 
+       while(n <= 0){
+        System.out.println("El número que ingreso es incorrecto");
+        System.out.println("Ingrese de nuevo el número de términos a generar:");
+        n = ingresoDatos.nextInt();
+       }
        
-        int n;
-        do {
-                System.out.println("Ingrese el numero de terminos a generar: ");
-                try {
-                    n = Integer.parseInt(ingresoDatos.nextLine());
-                    if(n<=0){
-                        System.out.println("Ingrese un tamaño valido");
-                    }
-                } catch (NumberFormatException error) {
-                    System.out.println("Ingrese numeros no letras");
-                    n=-1;
-                }
-            } while (n<=0);
-       
+        
 
         System.out.println("----- SERIES NUMERICAS -----");
 
@@ -200,8 +195,7 @@ public class Controller {
 
         g3_CadenaDeCaracteres9 cadena9 = new g3_CadenaDeCaracteres9();
         cadena9.Cadena9(ingresoDatos);
-
-        ingresoDatos.close(); 
+        ingresoDatos.close();
 
     }
 }
