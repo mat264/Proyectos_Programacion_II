@@ -90,5 +90,13 @@ public class Controller {
         serieCaracter2.S2Caracter_for(n);
         serieCaracter2.S2Caracter_while(n);
         serieCaracter2.S2Caracter_do_while(n);
+
+
+        System.out.println("----- CADENA DE CARACTERES -----");
+        g3_CadenaDeCaracteres1 cadena1 = new g3_CadenaDeCaracteres1();
+        cadena1.Cadena1();
+        ingresoDatos.close();
+
+
     }
 }
