@@ -21,6 +21,7 @@ public class Controller {
 
        System.out.println("Ingrese el numero de terminos a generar: ");
        int n = ingresoDatos.nextInt();
+       ingresoDatos.nextLine(); 
 
         System.out.println("----- SERIES NUMERICAS -----");
 
@@ -93,10 +94,18 @@ public class Controller {
 
 
         System.out.println("----- CADENA DE CARACTERES -----");
+
         g3_CadenaDeCaracteres1 cadena1 = new g3_CadenaDeCaracteres1();
         cadena1.Cadena1();
-        ingresoDatos.close();
+        
+        g3_CadenaDeCaracteres2 cadena2 = new g3_CadenaDeCaracteres2();
+        cadena2.Cadena2();
+        
 
 
+
+
+
+        ingresoDatos.close(); 
     }
 }
