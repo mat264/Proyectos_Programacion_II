@@ -2,15 +2,13 @@ package g3_Poliretos.g3_SerieNumerica;
 
 public class g3_SerieNum5 {
 
-    // SERIE 5
-    // S5 con bucle for
     public void S5Numerica_for(int n) {
-    System.out.println("SECUENCIA NUMERICA #5");
-    System.out.print("Serie (con el bucle for) de los primeros " + n + " primos: ");
+        System.out.println("SECUENCIA NUMERICA #5");
+        System.out.print("Serie (con el bucle for) de los primeros " + n + " primos: ");
 
-    int count = 0;  
+        int count = 0; 
 
-        for (int num = 2; count < n; num++) {
+        for (int num = 2; count < n; num++) { 
             boolean esPrimo = true;
 
             for (int j = 2; j * j <= num; j++) {
@@ -24,11 +22,11 @@ public class g3_SerieNum5 {
                 System.out.print(num + " ");
                 count++;
             }
-
-            num++; 
         }
+
         System.out.println();
     }
+
 
 
     // S5 con bucle while
@@ -71,6 +69,7 @@ public class g3_SerieNum5 {
             num++;
         } while (i < n);
         System.out.println();
-        System.out.println("\n---------------------------");
+        System.out.println("--------------------------------------");
+
     }
 }

@@ -50,7 +50,7 @@ public class g3_SerieNum6 {
             i++;
         }while(i < n);
         System.out.println();
-        System.out.println("\n---------------------------");
+        System.out.println("--------------------------------------");
 
     }
 }

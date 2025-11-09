@@ -44,6 +44,7 @@ public class g3_SerieNum1 {
             i++;
         } while (i < n);
         System.out.println();
-        System.out.println("\n---------------------------");
+        System.out.println("--------------------------------------");
+
     }
 }

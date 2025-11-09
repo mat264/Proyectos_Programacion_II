@@ -18,7 +18,7 @@ public class Controller {
        System.out.println("Molina.Jhanavi");
        System.out.println("---------------------------");
 
-       System.out.println("Ingrese el numero de terminos a generar: ");
+       System.out.print("Ingrese el numero de terminos a generar: ");
        int n = ingresoDatos.nextInt();
 
         System.out.println("----- SERIES NUMERICAS -----");
@@ -89,5 +89,46 @@ public class Controller {
         serieCaracter2.S2Caracter_for(n);
         serieCaracter2.S2Caracter_while(n);
         serieCaracter2.S2Caracter_do_while(n);
+
+        g3_SerieCaracter3 serieCaracter3 = new g3_SerieCaracter3();
+        serieCaracter3.S3Caracter_for(n);
+        serieCaracter3.S3Caracter_while(n);
+        serieCaracter3.S3Caracter_do_while(n);
+
+        g3_SerieCaracter4 serieCaracter4 = new g3_SerieCaracter4();
+        serieCaracter4.S4Caracter_for(n);
+        serieCaracter4.S4Caracter_while(n);
+        serieCaracter4.S4Caracter_do_while(n);
+
+        g3_SerieCaracter5 serieCaracter5 = new g3_SerieCaracter5();
+        serieCaracter5.S5Caracter_for(n);
+        serieCaracter5.S5Caracter_while(n);
+        serieCaracter5.S5Caracter_do_while(n);
+
+        g3_SerieCaracter6 serieCaracter6 = new g3_SerieCaracter6();
+        serieCaracter6.S6Caracter_for(n);
+        serieCaracter6.S6Caracter_while(n);
+        serieCaracter6.S6Caracter_do_while(n);
+
+        g3_SerieCaracter7 serieCaracter7 = new g3_SerieCaracter7();
+        serieCaracter7.S7Caracter_for(n);
+        serieCaracter7.S7Caracter_while(n);
+        serieCaracter7.S7Caracter_do_while(n);
+
+        g3_SerieCaracter8 serieCaracter8 = new g3_SerieCaracter8();
+        serieCaracter8.S8Caracter_for(n);
+        serieCaracter8.S8Caracter_while(n);
+        serieCaracter8.S8Caracter_do_while(n);
+
+        g3_SerieCaracter9 serieCaracter9 = new g3_SerieCaracter9();
+        serieCaracter9.S9Caracter_for(n);
+        serieCaracter9.S9Caracter_while(n);
+        serieCaracter9.S9Caracter_do_while(n);
+
+        g3_SerieCaracter10 serieCaracter10 = new g3_SerieCaracter10();
+        serieCaracter10.S10Caracter_for(n);
+        serieCaracter10.S10Caracter_while(n);
+        serieCaracter10.S10Caracter_do_while(n);
+
     }
 }
