@@ -21,6 +21,7 @@ public class Controller {
 
        System.out.println("Ingrese el numero de terminos a generar: ");
        int n = ingresoDatos.nextInt();
+       ingresoDatos.nextLine(); 
 
         System.out.println("----- SERIES NUMERICAS -----");
 
@@ -90,5 +91,39 @@ public class Controller {
         serieCaracter2.S2Caracter_for(n);
         serieCaracter2.S2Caracter_while(n);
         serieCaracter2.S2Caracter_do_while(n);
+
+
+        System.out.println("----- CADENA DE CARACTERES -----");
+
+        g3_CadenaDeCaracteres1 cadena1 = new g3_CadenaDeCaracteres1();
+        cadena1.Cadena1();
+        
+        g3_CadenaDeCaracteres2 cadena2 = new g3_CadenaDeCaracteres2();
+        cadena2.Cadena2();
+        
+        g3_CadenaDeCaracteres3 cadena3 = new g3_CadenaDeCaracteres3();
+        cadena3.Cadena3(ingresoDatos);  
+
+        g3_CadenaDeCaracteres4 cadena4 = new g3_CadenaDeCaracteres4();
+        cadena4.Cadena4(ingresoDatos);
+
+        g3_CadenaDeCaracteres5 cadena5 = new g3_CadenaDeCaracteres5();
+        cadena5.Cadena5(ingresoDatos);
+
+        g3_CadenaDeCaracteres6 cadena6 = new g3_CadenaDeCaracteres6();
+        cadena6.Cadena6(ingresoDatos);
+
+        g3_CadenaDeCaracteres7 cadena7 = new g3_CadenaDeCaracteres7();
+        cadena7.Cadena7(ingresoDatos);
+        
+        g3_CadenaDeCaracteres8 cadena8 = new g3_CadenaDeCaracteres8();
+        cadena8.Cadena8(ingresoDatos);
+
+        g3_CadenaDeCaracteres9 cadena9 = new g3_CadenaDeCaracteres9();
+        cadena9.Cadena9(ingresoDatos);
+
+
+
+        ingresoDatos.close(); 
     }
 }
