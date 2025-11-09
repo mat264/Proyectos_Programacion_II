@@ -6,6 +6,9 @@ import g3_Poliretos.g3_SerieCaracteres.*;
 import g3_Poliretos.g3_SerieNumerica.*;
 import g3_Poliretos.g3_CadenaDeCaracteres.*;
 
+import g3_Poliretos.g3_Figuras.*;
+
+
 public class Controller {
     public void inicializar () {
        Scanner ingresoDatos = new Scanner(System.in);
@@ -19,15 +22,22 @@ public class Controller {
        System.out.println("Molina.Jhanavi");
        System.out.println("---------------------------");
 
-       System.out.print("Ingrese el numero de terminos a generar: ");
-       int n = ingresoDatos.nextInt();
-       ingresoDatos.nextLine(); 
 
-       while(n <= 0){
-        System.out.println("El número que ingreso es incorrecto");
-        System.out.println("Ingrese de nuevo el número de términos a generar:");
-        n = ingresoDatos.nextInt();
-       }
+       
+        int n;
+        do {
+                System.out.println("Ingrese el numero de terminos a generar: ");
+                try {
+                    n = Integer.parseInt(ingresoDatos.nextLine());
+                    if(n<=0){
+                        System.out.println("Ingrese un tamaño valido");
+                    }
+                } catch (NumberFormatException error) {
+                    System.out.println("Ingrese numeros no letras");
+                    n=-1;
+                }
+            } while (n<=0);
+       
 
         System.out.println("----- SERIES NUMERICAS -----");
 
@@ -98,6 +108,28 @@ public class Controller {
         serieCaracter2.S2Caracter_while(n);
         serieCaracter2.S2Caracter_do_while(n);
 
+
+        System.out.println("--------- FIGURAS -----------");
+        g3_Figuras figura = new g3_Figuras();
+        figura.g3_figuraF1(n);
+        figura.g3_figuraF2(n);
+        figura.g3_figuraF3(n);
+        figura.g3_figuraF4(n);
+        figura.g3_figuraF5(n);  
+        figura.g3_figuraF6(n);
+        figura.g3_figuraF7(n);
+        figura.g3_figuraF8(n);
+        figura.g3_figuraF9(n);
+        figura.g3_figuraF10(n);
+        figura.g3_figuraF11(n);
+        figura.g3_figuraF12(n);
+        figura.g3_figuraF13(n);
+        figura.g3_figuraF14(n);
+        figura.g3_figuraF15(n);
+        figura.g3_figuraF16(n);
+        figura.g3_figuraF17(n);
+        figura.g3_figuraF18(n);
+        figura.g3_figuraF19(n);
 
         g3_SerieCaracter3 serieCaracter3 = new g3_SerieCaracter3();
         serieCaracter3.S3Caracter_for(n);
@@ -170,5 +202,6 @@ public class Controller {
         cadena9.Cadena9(ingresoDatos);
 
         ingresoDatos.close(); 
+
     }
 }
