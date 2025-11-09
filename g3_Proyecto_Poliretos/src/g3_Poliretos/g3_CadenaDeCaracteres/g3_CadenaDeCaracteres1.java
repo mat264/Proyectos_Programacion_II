@@ -40,8 +40,6 @@ public class g3_CadenaDeCaracteres1 {
             k++;
         } while (k < cadena.length());
         System.out.println("Conteo con DO WHILE: tiene " + contadorDoWhile + " vocales");
-        // Do not close Scanner(System.in) here — closing it will close System.in
-        // and cause NoSuchElementException in subsequent reads.
     }
 }
 
