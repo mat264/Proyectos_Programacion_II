@@ -40,7 +40,6 @@ public class g3_CadenaDeCaracteres1 {
             k++;
         } while (k < cadena.length());
         System.out.println("Conteo con DO WHILE: tiene " + contadorDoWhile + " vocales");
-      
     }
 }
 
