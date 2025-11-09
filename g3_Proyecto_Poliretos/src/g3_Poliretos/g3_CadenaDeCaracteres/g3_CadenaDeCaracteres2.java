@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class g3_CadenaDeCaracteres2 {
     public void Cadena2() {
         Scanner ingresoDatos = new Scanner(System.in);
-
         System.out.println("Ingrese una cadena de caracteres: ");
         String cadena = ingresoDatos.nextLine();
 
@@ -44,6 +43,6 @@ public class g3_CadenaDeCaracteres2 {
             } while (k < cadena.length());
         }
         System.out.println("Conteo con DO WHILE: tiene " + contadorDoWhile + " letras");
-       
+        
     }
 }
