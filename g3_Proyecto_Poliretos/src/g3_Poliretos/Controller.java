@@ -110,7 +110,11 @@ public class Controller {
         g3_CadenaDeCaracteres5 cadena5 = new g3_CadenaDeCaracteres5();
         cadena5.Cadena5(ingresoDatos);
 
+        g3_CadenaDeCaracteres6 cadena6 = new g3_CadenaDeCaracteres6();
+        cadena6.Cadena6(ingresoDatos);
 
+        g3_CadenaDeCaracteres7 cadena7 = new g3_CadenaDeCaracteres7();
+        cadena7.Cadena7(ingresoDatos);
 
 
 
