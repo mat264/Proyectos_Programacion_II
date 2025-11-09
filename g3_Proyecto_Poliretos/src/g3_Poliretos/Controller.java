@@ -101,6 +101,9 @@ public class Controller {
         g3_CadenaDeCaracteres2 cadena2 = new g3_CadenaDeCaracteres2();
         cadena2.Cadena2();
         
+        g3_CadenaDeCaracteres3 cadena3 = new g3_CadenaDeCaracteres3();
+        cadena3.Cadena3(ingresoDatos);  
+        
 
 
 
