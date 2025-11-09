@@ -201,8 +201,6 @@ public class Controller {
         g3_CadenaDeCaracteres9 cadena9 = new g3_CadenaDeCaracteres9();
         cadena9.Cadena9(ingresoDatos);
 
-
-
         ingresoDatos.close(); 
 
     }
