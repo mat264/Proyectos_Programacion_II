@@ -103,29 +103,6 @@ public class Controller {
         serieCaracter2.S2Caracter_while(n);
         serieCaracter2.S2Caracter_do_while(n);
 
-
-        System.out.println("--------- FIGURAS -----------");
-        g3_Figuras figura = new g3_Figuras();
-        figura.g3_figuraF1(n);
-        figura.g3_figuraF2(n);
-        figura.g3_figuraF3(n);
-        figura.g3_figuraF4(n);
-        figura.g3_figuraF5(n);  
-        figura.g3_figuraF6(n);
-        figura.g3_figuraF7(n);
-        figura.g3_figuraF8(n);
-        figura.g3_figuraF9(n);
-        figura.g3_figuraF10(n);
-        figura.g3_figuraF11(n);
-        figura.g3_figuraF12(n);
-        figura.g3_figuraF13(n);
-        figura.g3_figuraF14(n);
-        figura.g3_figuraF15(n);
-        figura.g3_figuraF16(n);
-        figura.g3_figuraF17(n);
-        figura.g3_figuraF18(n);
-        figura.g3_figuraF19(n);
-
         g3_SerieCaracter3 serieCaracter3 = new g3_SerieCaracter3();
         serieCaracter3.S3Caracter_for(n);
         serieCaracter3.S3Caracter_while(n);
@@ -166,6 +143,28 @@ public class Controller {
         serieCaracter10.S10Caracter_while(n);
         serieCaracter10.S10Caracter_do_while(n);
 
+
+        System.out.println("--------- FIGURAS -----------");
+        g3_Figuras figura = new g3_Figuras();
+        figura.g3_figuraF1(n);
+        figura.g3_figuraF2(n);
+        figura.g3_figuraF3(n);
+        figura.g3_figuraF4(n);
+        figura.g3_figuraF5(n);  
+        figura.g3_figuraF6(n);
+        figura.g3_figuraF7(n);
+        figura.g3_figuraF8(n);
+        figura.g3_figuraF9(n);
+        figura.g3_figuraF10(n);
+        figura.g3_figuraF11(n);
+        figura.g3_figuraF12(n);
+        figura.g3_figuraF13(n);
+        figura.g3_figuraF14(n);
+        figura.g3_figuraF15(n);
+        figura.g3_figuraF16(n);
+        figura.g3_figuraF17(n);
+        figura.g3_figuraF18(n);
+        figura.g3_figuraF19(n);
 
         System.out.println("----- CADENA DE CARACTERES -----");
 
