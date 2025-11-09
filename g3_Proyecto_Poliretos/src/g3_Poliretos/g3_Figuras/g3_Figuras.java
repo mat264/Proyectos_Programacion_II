@@ -2,8 +2,6 @@ package g3_Poliretos.g3_Figuras;
 
 
 public class g3_Figuras {
-
-
     // Figura 1
     public void g3_figuraF1(int tam) {
 
