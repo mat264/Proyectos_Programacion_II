@@ -24,7 +24,7 @@ public class Controller {
 
          int n;
     do {
-    System.out.println("Ingrese el numero de terminos a generar (FIGURAS): ");
+    System.out.println("Ingrese el numero de terminos a generar: ");
     try {
         n = Integer.parseInt(ingresoDatos.nextLine());
         if (n <= 0) {
