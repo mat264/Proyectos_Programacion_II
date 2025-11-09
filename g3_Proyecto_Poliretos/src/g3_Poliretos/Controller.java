@@ -23,6 +23,12 @@ public class Controller {
        int n = ingresoDatos.nextInt();
        ingresoDatos.nextLine(); 
 
+       while(n <= 0){
+        System.out.println("El número que ingreso es incorrecto");
+        System.out.println("Ingrese de nuevo el número de términos a generar:");
+        n = ingresoDatos.nextInt();
+       }
+
         System.out.println("----- SERIES NUMERICAS -----");
 
         g3_SerieNum1 serie1 = new g3_SerieNum1();
