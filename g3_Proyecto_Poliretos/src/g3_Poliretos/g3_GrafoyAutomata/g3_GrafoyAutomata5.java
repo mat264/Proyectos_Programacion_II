@@ -1,8 +1,8 @@
-package g3_Poliretos.g3_GrafosyAutomatas;
+package g3_Poliretos.g3_GrafoyAutomata;
 
 import java.util.Scanner;
 
-public class g3_GrafosyAutomatas5 {
+public class g3_GrafoyAutomata5 {
     public static boolean validar(String numero) {
         return numero.matches("\\d+\\.\\d+");
     }

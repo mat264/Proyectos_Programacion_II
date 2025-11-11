@@ -1,8 +1,8 @@
-package g3_Poliretos.g3_GrafosyAutomatas;
+package g3_Poliretos.g3_GrafoyAutomata;
 
 import java.util.Scanner;
 
-public class g3_GrafosyAutomatas7 {
+public class g3_GrafoyAutomata7 {
     public static boolean validar(String clave) {
         return clave.matches("(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[^A-Za-z0-9]).+");
     }

@@ -1,8 +1,8 @@
-package g3_Poliretos.g3_GrafosyAutomatas;
+package g3_Poliretos.g3_GrafoyAutomata;
 
 import java.util.Scanner;
 
-public class g3_GrafosyAutomatas6 {
+public class g3_GrafoyAutomata6 {
     public static boolean validar(String variable) {
         return variable.matches("[a-zA-Z_$][a-zA-Z\\d_$]*");
     }
