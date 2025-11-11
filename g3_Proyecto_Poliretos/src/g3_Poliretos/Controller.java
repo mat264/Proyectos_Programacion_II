@@ -285,7 +285,7 @@ public class Controller {
         System.out.print("Ingrese el número desde donde contar hacia atrás: ");
         int numRegresivo = Integer.parseInt(ingresoDatos.nextLine());
         g3_recursion6.conteoRegresivo(numRegresivo);
-        System.out.println();   
+        System.out.println(); 
 
         ingresoDatos.close();
     }
