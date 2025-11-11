@@ -1,12 +1,17 @@
 package g3_Poliretos.g3_GrafosyAutomatas;
 
+import java.util.Scanner;
+
 public class g3_GrafosyAutomatas5 {
     public static boolean validar(String numero) {
-        // Acepta números decimales tipo: 12, 12.3, .45, 0.5
-        return numero.matches("^[0-9]*\\.?[0-9]+$");
+        return numero.matches("\\d+\\.\\d+");
     }
 
     public static void main(String[] args) {
-        System.out.println("12.34 => " + validar("12.34"));
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese un número decimal: ");
+        String numero = sc.nextLine();
+        System.out.println(numero + " => " + validar(numero));
+        sc.close();
     }
 }

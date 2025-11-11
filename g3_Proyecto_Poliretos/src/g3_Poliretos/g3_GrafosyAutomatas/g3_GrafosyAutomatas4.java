@@ -1,11 +1,17 @@
 package g3_Poliretos.g3_GrafosyAutomatas;
 
+import java.util.Scanner;
+
 public class g3_GrafosyAutomatas4 {
     public static boolean validar(String cadena) {
-        return cadena.matches("1+0+1*");
+        return cadena.matches("1+|0+1*");
     }
 
     public static void main(String[] args) {
-        System.out.println("11100011 => " + validar("11100011"));
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese la cadena (1+ o 0+1*): ");
+        String cadena = sc.nextLine();
+        System.out.println(cadena + " => " + validar(cadena));
+        sc.close();
     }
 }

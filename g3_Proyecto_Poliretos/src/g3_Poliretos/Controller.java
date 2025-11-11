@@ -1,12 +1,12 @@
 package g3_Poliretos;
 
-import java.util.Scanner;
-
+import g3_Poliretos.g3_CadenaDeCaracteres.*;
+import g3_Poliretos.g3_Figuras.*;
+import g3_Poliretos.g3_GrafosyAutomatas.*;
+import g3_Poliretos.g3_Recursion.*;
 import g3_Poliretos.g3_SerieCaracteres.*;
 import g3_Poliretos.g3_SerieNumerica.*;
-import g3_Poliretos.g3_CadenaDeCaracteres.*;
-
-import g3_Poliretos.g3_Figuras.*;
+import java.util.Scanner;
 
 
 public class Controller {
@@ -200,5 +200,39 @@ public class Controller {
         cadena9.Cadena9(ingresoDatos);
         ingresoDatos.close();
 
+        System.out.println("\n----- RESULTADOS RECURSIÓN -----");
+
+System.out.println("Recursión 1 (Factorial de " + n + "): " + g3_recursion1.factorial(n));
+System.out.println("Recursión 2 (Suma n+2): " + g3_recursion2.suma(n, 2));
+System.out.println("Recursión 3 (Multiplicación n*2): " + g3_recursion3.multiplicacion(n, 2));
+System.out.println("Recursión 4 (Potencia n^2): " + g3_recursion4.potencia(n, 2));
+
+System.out.print("Recursión 5 (Conteo hasta " + n + "): ");
+g3_recursion5.conteoProgresivoHasta(n);
+System.out.println();
+
+System.out.println("Recursión 6: " + g3_recursion6.g3_Recursion(n));
+
+System.out.println("\n----- GRAFOS Y AUTÓMATAS -----");
+
+String cadenaA = "aabbc"; 
+String cadenaB = "abacaba"; 
+
+System.out.println("--- PRUEBA 1: '" + cadenaA + "' ---");
+
+System.out.println("Grafo/Autómata 1 valida: " 
+                    + g3_GrafosyAutomatas1.validar(cadenaA));
+System.out.println("Grafo/Autómata 2 valida: " 
+                    + g3_GrafosyAutomatas2.validar(cadenaA));
+System.out.println("Grafo/Autómata 3 valida: " 
+                    + g3_GrafosyAutomatas3.validar(cadenaA));
+System.out.println("Grafo/Autómata 4 valida: " 
+                    + g3_GrafosyAutomatas4.validar(cadenaA));
+System.out.println("Grafo/Autómata 5 valida: " 
+                    + g3_GrafosyAutomatas5.validar(cadenaA));
+System.out.println("Grafo/Autómata 6 valida: " 
+                    + g3_GrafosyAutomatas6.validar(cadenaA));
+System.out.println("Grafo/Autómata 7 valida: " 
+                    + g3_GrafosyAutomatas7.validar(cadenaA));
     }
 }
