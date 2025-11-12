@@ -2,7 +2,7 @@ package g3_Poliretos;
 
 import g3_Poliretos.g3_CadenaDeCaracteres.*;
 import g3_Poliretos.g3_Figuras.*;
-import g3_Poliretos.g3_GrafosyAutomatas.*;
+import g3_Poliretos.g3_GrafoyAutomata.*;
 import g3_Poliretos.g3_Recursion.*;
 import g3_Poliretos.g3_SerieCaracteres.*;
 import g3_Poliretos.g3_SerieNumerica.*;
@@ -204,43 +204,43 @@ public class Controller {
         System.out.println("\n--- A01: Validar a*b+c ---");
         System.out.print("Ingrese cadena: ");
         String cadenaA01 = ingresoDatos.nextLine();
-    System.out.println(cadenaA01 + " => " + g3_GrafosyAutomatas1.validar(cadenaA01));
+    System.out.println(cadenaA01 + " => " + g3_GrafoyAutomata1.validar(cadenaA01));
         
         // A02) Automatas para validar: ab+ca
         System.out.println("\n--- A02: Validar ab+ca ---");
         System.out.print("Ingrese cadena: ");
         String cadenaA02 = ingresoDatos.nextLine();
-    System.out.println(cadenaA02 + " => " + g3_GrafosyAutomatas2.validar(cadenaA02));
+    System.out.println(cadenaA02 + " => " + g3_GrafoyAutomata2.validar(cadenaA02));
         
         // A03) Automatas para validar: a+/b+/c+
         System.out.println("\n--- A03: Validar a+/b+/c+ ---");
         System.out.print("Ingrese cadena: ");
         String cadenaA03 = ingresoDatos.nextLine();
-    System.out.println(cadenaA03 + " => " + g3_GrafosyAutomatas3.validar(cadenaA03));
+    System.out.println(cadenaA03 + " => " + g3_GrafoyAutomata3.validar(cadenaA03));
         
         // A04) Automatas para validar: 1+/0+1*
         System.out.println("\n--- A04: Validar 1+/0+1* ---");
         System.out.print("Ingrese cadena: ");
         String cadenaA04 = ingresoDatos.nextLine();
-    System.out.println(cadenaA04 + " => " + g3_GrafosyAutomatas4.validar(cadenaA04));
+    System.out.println(cadenaA04 + " => " + g3_GrafoyAutomata4.validar(cadenaA04));
         
         // A05) Validar número decimal
         System.out.println("\n--- A05: Validar número decimal ---");
         System.out.print("Ingrese número: ");
         String numeroDecimal = ingresoDatos.nextLine();
-    System.out.println(numeroDecimal + " => " + g3_GrafosyAutomatas5.validar(numeroDecimal));
+    System.out.println(numeroDecimal + " => " + g3_GrafoyAutomata5.validar(numeroDecimal));
         
         // A06) Validar declaración de variables en Java
         System.out.println("\n--- A06: Validar variable Java ---");
         System.out.print("Ingrese variable: ");
         String variable = ingresoDatos.nextLine();
-    System.out.println(variable + " => " + g3_GrafosyAutomatas6.validar(variable));
+    System.out.println(variable + " => " + g3_GrafoyAutomata6.validar(variable));
         
         // A07) Validar clave segura
         System.out.println("\n--- A07: Validar clave segura ---");
         System.out.print("Ingrese clave: ");
         String clave = ingresoDatos.nextLine();
-    System.out.println(clave + " => " + g3_GrafosyAutomatas7.validar(clave));
+    System.out.println(clave + " => " + g3_GrafoyAutomata7.validar(clave));
         
         System.out.println("\n--------- RECURSION -----------");
         
