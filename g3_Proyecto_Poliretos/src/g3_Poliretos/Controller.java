@@ -244,49 +244,30 @@ public class Controller {
         
         System.out.println("\n--------- RECURSION -----------");
         
-    // R01) Factorial
-    System.out.println("\n--- R01: Factorial ---");
-    System.out.print("Ingrese el numero para calcular factorial: ");
-    int fact_n = Integer.parseInt(ingresoDatos.nextLine());
-    System.out.println("Factorial de " + fact_n + " = " + g3_recursion1.factorial(fact_n));
+        // R01) Factorial
+        System.out.println("\n--- R01: Factorial ---");
+        g3_recursion1 recursion1 = new g3_recursion1();
+        recursion1.ejecutar();
         
-        // R02) Suma recursiva
+        // R02) Suma
         System.out.println("\n--- R02: Suma ---");
-        System.out.print("Ingrese el primer número: ");
-        int suma_a = Integer.parseInt(ingresoDatos.nextLine());
-        System.out.print("Ingrese el segundo número: ");
-        int suma_b = Integer.parseInt(ingresoDatos.nextLine());
-        System.out.println("La suma es: " + g3_recursion2.suma(suma_a, suma_b));
+        g3_recursion2.main(new String[]{});
         
-        // R03) Multiplicación recursiva
+        // R03) Multiplicación
         System.out.println("\n--- R03: Multiplicación ---");
-        System.out.print("Ingrese el primer número: ");
-        int mult_a = Integer.parseInt(ingresoDatos.nextLine());
-        System.out.print("Ingrese el segundo número: ");
-        int mult_b = Integer.parseInt(ingresoDatos.nextLine());
-        System.out.println("El producto es: " + g3_recursion3.multiplicacion(mult_a, mult_b));
+        g3_recursion3.main(new String[]{});
         
-        // R04) Potencia recursiva
+        // R04) Potencia
         System.out.println("\n--- R04: Potencia ---");
-        System.out.print("Ingrese la base: ");
-        int pot_a = Integer.parseInt(ingresoDatos.nextLine());
-        System.out.print("Ingrese el exponente: ");
-        int pot_b = Integer.parseInt(ingresoDatos.nextLine());
-        System.out.println(pot_a + " elevado a " + pot_b + " = " + g3_recursion4.potencia(pot_a, pot_b));
+        g3_recursion4.main(new String[]{});
         
         // R05) Conteo progresivo
         System.out.println("\n--- R05: Conteo progresivo ---");
-        System.out.print("Ingrese el número hasta donde contar: ");
-        int numProgresivo = Integer.parseInt(ingresoDatos.nextLine());
-        g3_recursion5.conteoProgresivoHasta(numProgresivo);
-        System.out.println();
+        g3_recursion5.main(new String[]{});
         
         // R06) Conteo regresivo
         System.out.println("\n--- R06: Conteo regresivo ---");
-        System.out.print("Ingrese el número desde donde contar hacia atrás: ");
-        int numRegresivo = Integer.parseInt(ingresoDatos.nextLine());
-        g3_recursion6.conteoRegresivo(numRegresivo);
-        System.out.println(); 
+        g3_recursion6.main(new String[]{});
               ingresoDatos.close();
     }
 }
