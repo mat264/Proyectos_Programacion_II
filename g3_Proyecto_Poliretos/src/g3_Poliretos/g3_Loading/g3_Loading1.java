@@ -12,7 +12,7 @@ public class g3_Loading1 {
             System.out.print("\r" + spinner[i % 4] + " " + i + "%");
             delay();
         }
-        System.out.println(); // Terminar la línea
+        System.out.println(); 
     }
 
     public void g3_L01_while() {

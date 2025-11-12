@@ -1,5 +1,11 @@
 package g3_Poliretos;
 
+import java.util.Scanner;
+
+import g3_Poliretos.g3_SerieCaracteres.*;
+import g3_Poliretos.g3_SerieNumerica.*;
+import g3_Poliretos.g3_Array.*;
+import g3_Poliretos.g3_Loading.*;
 import g3_Poliretos.g3_CadenaDeCaracteres.*;
 import g3_Poliretos.g3_Figuras.*;
 import g3_Poliretos.g3_GrafoyAutomata.*;
@@ -198,6 +204,79 @@ public class Controller {
 
         g3_CadenaDeCaracteres9 cadena9 = new g3_CadenaDeCaracteres9();
         cadena9.Cadena9(ingresoDatos);
+       
+
+System.out.println("--------- EJERCICIOS ARRAYS -----------");
+        g3_Array1 array1 = new g3_Array1();
+        array1.g3_arrayA01_for(ingresoDatos);
+        array1.g3_arrayA01_while(ingresoDatos);
+        array1.g3_arrayA01_do_while(ingresoDatos);
+        
+        g3_Array2 array2 = new g3_Array2();
+        array2.g3_arrayA02_for(n, ingresoDatos); 
+        array2.g3_arrayA02_while(n, ingresoDatos);
+        array2.g3_arrayA02_do_while(n, ingresoDatos);
+
+        g3_Array3 array3 = new g3_Array3();
+        array3.g3_arrayA03_for(n, ingresoDatos); 
+        array3.g3_arrayA03_while(n, ingresoDatos);
+        array3.g3_arrayA03_do_while(n, ingresoDatos);
+
+        g3_Array4 array4 = new g3_Array4();
+        array4.g3_arrayA04_for(ingresoDatos); 
+        array4.g3_arrayA04_while(ingresoDatos);
+        array4.g3_arrayA04_do_while(ingresoDatos);
+
+        g3_Array5 array5 = new g3_Array5();       
+        array5.g3_arrayA05_for(ingresoDatos); 
+        array5.g3_arrayA05_while(ingresoDatos);
+        array5.g3_arrayA05_do_while(ingresoDatos);
+    
+    
+System.out.println("--------- EJERCICIOS LOADING L01-L12 -----------");
+
+        g3_Loading1 l01 = new g3_Loading1();
+        l01.g3_L01_for(); l01.g3_L01_while(); l01.g3_L01_do_while();
+        
+        g3_Loading2 l02 = new g3_Loading2();
+        l02.g3_L02_for(ingresoDatos); l02.g3_L02_while(ingresoDatos); l02.g3_L02_do_while(ingresoDatos);
+        
+        g3_Loading3 l03 = new g3_Loading3();
+        // Se pasa 'ingresoDatos'
+        l03.g3_L03_for(ingresoDatos); l03.g3_L03_while(ingresoDatos); l03.g3_L03_do_while(ingresoDatos);
+        
+        g3_Loading4 l04 = new g3_Loading4();
+        l04.g3_L04_for(); l04.g3_L04_while(); l04.g3_L04_do_while();
+        
+        g3_Loading5 l05 = new g3_Loading5();
+        l05.g3_L05_for(); l05.g3_L05_while(); l05.g3_L05_do_while();
+        
+        g3_Loading6 l06 = new g3_Loading6();
+        l06.g3_L06_for(); l06.g3_L06_while(); l06.g3_L06_do_while();
+        
+        g3_Loading7 l07 = new g3_Loading7();
+        l07.g3_L07_for(); l07.g3_L07_while(); l07.g3_L07_do_while();
+        
+        g3_Loading8 l08 = new g3_Loading8();
+        l08.g3_L08_for(ingresoDatos); l08.g3_L08_while(ingresoDatos); l08.g3_L08_do_while(ingresoDatos);
+        
+        g3_Loading9 l09 = new g3_Loading9();
+        l09.g3_L09_for(ingresoDatos); l09.g3_L09_while(ingresoDatos); l09.g3_L09_do_while(ingresoDatos);
+        
+        g3_Loading10 l10 = new g3_Loading10();
+        l10.g3_L10_for(); l10.g3_L10_while(); l10.g3_L10_do_while();
+        
+        g3_Loading11 l11 = new g3_Loading11();
+        
+        System.out.println("--- L11a (Simétrico) ---");
+        l11.g3_L11a_for(n); l11.g3_L11a_while(n); l11.g3_L11a_do_while(n);
+
+        System.out.println("--- L11b (Vectorial) ---");
+        l11.g3_L11b_for(n); l11.g3_L11b_while(n); l11.g3_L11b_do_while(n);
+        
+        g3_Loading12 l12 = new g3_Loading12();
+        l12.g3_L12_for(n); l12.g3_L12_while(n); l12.g3_L12_do_while(n);
+         ingresoDatos.close();
         System.out.println("\n--------- GRAFOS Y AUTOMATAS -----------");
         
     // A01) Automatas para validar: a*b+c
