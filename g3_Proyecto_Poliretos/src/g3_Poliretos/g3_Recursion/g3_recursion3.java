@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class g3_recursion3 {
     public static int multiplicacion(int a, int b) {
         if (b == 0) return 0;
-        if (b < 0) return -multiplicacion(a, -b); // Manejo de negativos
+        if (b < 0) return -multiplicacion(a, -b);
         return a + multiplicacion(a, b - 1);
     }
 
@@ -17,21 +17,20 @@ public class g3_recursion3 {
         while (!valido) {
             try {
                 System.out.print("Ingrese el primer número: ");
-                a = sc.nextInt();
+                a = Integer.parseInt(sc.nextLine());
                 System.out.print("Ingrese el segundo número: ");
-                b = sc.nextInt();
+                b = Integer.parseInt(sc.nextLine());
                 valido = true;
                 
                 if (Math.abs(b) > 1000) {
                     System.out.println("Advertencia: Multiplicar por números muy grandes puede ser lento.");
                 }
-            } catch (Exception e) {
+            } catch (NumberFormatException e) {
                 System.out.println("Error: Debe ingresar números enteros.");
-                sc.nextLine(); // Limpiar buffer
             }
         }
         
         System.out.println("El producto de " + a + " x " + b + " es: " + multiplicacion(a, b));
-        sc.close();
+        // NO cerrar sc.close() aquí
     }
 }

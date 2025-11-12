@@ -19,9 +19,9 @@ public class g3_recursion4 {
         while (!valido) {
             try {
                 System.out.print("Ingrese la base: ");
-                a = sc.nextInt();
+                a = Integer.parseInt(sc.nextLine());
                 System.out.print("Ingrese el exponente (debe ser >= 0): ");
-                b = sc.nextInt();
+                b = Integer.parseInt(sc.nextLine());
                 
                 if (b < 0) {
                     System.out.println("Error: El exponente debe ser positivo o cero.");
@@ -31,7 +31,6 @@ public class g3_recursion4 {
                 if (b > 30) {
                     System.out.println("Advertencia: Exponentes muy grandes pueden causar desbordamiento.");
                     System.out.print("¿Desea continuar? (s/n): ");
-                    sc.nextLine(); // Limpiar buffer
                     String respuesta = sc.nextLine();
                     if (!respuesta.equalsIgnoreCase("s")) {
                         continue;
@@ -39,9 +38,8 @@ public class g3_recursion4 {
                 }
                 
                 valido = true;
-            } catch (Exception e) {
+            } catch (NumberFormatException e) {
                 System.out.println("Error: Debe ingresar números enteros.");
-                sc.nextLine(); // Limpiar buffer
             }
         }
         
@@ -51,6 +49,5 @@ public class g3_recursion4 {
         } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
         }
-        sc.close();
     }
 }
