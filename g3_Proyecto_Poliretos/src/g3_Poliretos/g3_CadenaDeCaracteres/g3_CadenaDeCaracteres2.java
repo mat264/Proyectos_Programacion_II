@@ -76,6 +76,6 @@ public class g3_CadenaDeCaracteres2 {
             } while (k < cadena.length());
         }
         System.out.println("Conteo con DO WHILE: tiene " + contadorDoWhile + " letras");
-       
+        
     }
 }

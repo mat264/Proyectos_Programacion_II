@@ -6,6 +6,9 @@ import g3_Poliretos.g3_SerieCaracteres.*;
 import g3_Poliretos.g3_SerieNumerica.*;
 import g3_Poliretos.g3_CadenaDeCaracteres.*;
 
+import g3_Poliretos.g3_Figuras.*;
+
+
 public class Controller {
     public void inicializar () {
        Scanner ingresoDatos = new Scanner(System.in);
@@ -19,9 +22,21 @@ public class Controller {
        System.out.println("Molina.Jhanavi");
        System.out.println("---------------------------");
 
-       System.out.println("Ingrese el numero de terminos a generar: ");
-       int n = ingresoDatos.nextInt();
-       ingresoDatos.nextLine(); 
+         int n;
+    do {
+    System.out.println("Ingrese el numero de terminos a generar: ");
+    try {
+        n = Integer.parseInt(ingresoDatos.nextLine());
+        if (n <= 0) {
+            System.out.println("Ingrese un tamaño valido");
+        }
+    } catch (NumberFormatException error) {
+        System.out.println("Ingrese numeros no letras");
+        n = -1;
+    }
+    }      while (n <= 0);
+       
+        
 
         System.out.println("----- SERIES NUMERICAS -----");
 
@@ -92,6 +107,68 @@ public class Controller {
         serieCaracter2.S2Caracter_while(n);
         serieCaracter2.S2Caracter_do_while(n);
 
+        g3_SerieCaracter3 serieCaracter3 = new g3_SerieCaracter3();
+        serieCaracter3.S3Caracter_for(n);
+        serieCaracter3.S3Caracter_while(n);
+        serieCaracter3.S3Caracter_do_while(n);
+
+        g3_SerieCaracter4 serieCaracter4 = new g3_SerieCaracter4();
+        serieCaracter4.S4Caracter_for(n);
+        serieCaracter4.S4Caracter_while(n);
+        serieCaracter4.S4Caracter_do_while(n);
+
+        g3_SerieCaracter5 serieCaracter5 = new g3_SerieCaracter5();
+        serieCaracter5.S5Caracter_for(n);
+        serieCaracter5.S5Caracter_while(n);
+        serieCaracter5.S5Caracter_do_while(n);
+
+        g3_SerieCaracter6 serieCaracter6 = new g3_SerieCaracter6();
+        serieCaracter6.S6Caracter_for(n);
+        serieCaracter6.S6Caracter_while(n);
+        serieCaracter6.S6Caracter_do_while(n);
+
+        g3_SerieCaracter7 serieCaracter7 = new g3_SerieCaracter7();
+        serieCaracter7.S7Caracter_for(n);
+        serieCaracter7.S7Caracter_while(n);
+        serieCaracter7.S7Caracter_do_while(n);
+
+        g3_SerieCaracter8 serieCaracter8 = new g3_SerieCaracter8();
+        serieCaracter8.S8Caracter_for(n);
+        serieCaracter8.S8Caracter_while(n);
+        serieCaracter8.S8Caracter_do_while(n);
+
+        g3_SerieCaracter9 serieCaracter9 = new g3_SerieCaracter9();
+        serieCaracter9.S9Caracter_for(n);
+        serieCaracter9.S9Caracter_while(n);
+        serieCaracter9.S9Caracter_do_while(n);
+
+        g3_SerieCaracter10 serieCaracter10 = new g3_SerieCaracter10();
+        serieCaracter10.S10Caracter_for(n);
+        serieCaracter10.S10Caracter_while(n);
+        serieCaracter10.S10Caracter_do_while(n);
+
+
+        System.out.println("--------- FIGURAS -----------");
+        g3_Figuras figura = new g3_Figuras();
+        figura.g3_figuraF1(n);
+        figura.g3_figuraF2(n);
+        figura.g3_figuraF3(n);
+        figura.g3_figuraF4(n);
+        figura.g3_figuraF5(n);  
+        figura.g3_figuraF6(n);
+        figura.g3_figuraF7(n);
+        figura.g3_figuraF8(n);
+        figura.g3_figuraF9(n);
+        figura.g3_figuraF10(n);
+        figura.g3_figuraF11(n);
+        figura.g3_figuraF12(n);
+        figura.g3_figuraF13(n);
+        figura.g3_figuraF14(n);
+        figura.g3_figuraF15(n);
+        figura.g3_figuraF16(n);
+        figura.g3_figuraF17(n);
+        figura.g3_figuraF18(n);
+        figura.g3_figuraF19(n);
 
         System.out.println("----- CADENA DE CARACTERES -----");
 
@@ -121,9 +198,7 @@ public class Controller {
 
         g3_CadenaDeCaracteres9 cadena9 = new g3_CadenaDeCaracteres9();
         cadena9.Cadena9(ingresoDatos);
+        ingresoDatos.close();
 
-
-
-        ingresoDatos.close(); 
     }
 }

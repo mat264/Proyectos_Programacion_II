@@ -40,7 +40,8 @@ public class g3_SerieNum9 {
             i++;
         }while(i <= n);
         System.out.println();
-        System.out.println("------------------------------------------------------");
+        System.out.println("--------------------------------------");
+
     }
     
 }
