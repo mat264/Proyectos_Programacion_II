@@ -7,8 +7,12 @@ import g3_Poliretos.g3_SerieNumerica.*;
 import g3_Poliretos.g3_Array.*;
 import g3_Poliretos.g3_Loading.*;
 import g3_Poliretos.g3_CadenaDeCaracteres.*;
-
 import g3_Poliretos.g3_Figuras.*;
+import g3_Poliretos.g3_GrafoyAutomata.*;
+import g3_Poliretos.g3_Recursion.*;
+import g3_Poliretos.g3_SerieCaracteres.*;
+import g3_Poliretos.g3_SerieNumerica.*;
+import java.util.Scanner;
 
 
 public class Controller {
@@ -273,5 +277,95 @@ System.out.println("--------- EJERCICIOS LOADING L01-L12 -----------");
         g3_Loading12 l12 = new g3_Loading12();
         l12.g3_L12_for(n); l12.g3_L12_while(n); l12.g3_L12_do_while(n);
          ingresoDatos.close();
+        System.out.println("\n--------- GRAFOS Y AUTOMATAS -----------");
+        
+    // A01) Automatas para validar: a*b+c
+        System.out.println("\n--- A01: Validar a*b+c ---");
+        System.out.print("Ingrese cadena: ");
+        String cadenaA01 = ingresoDatos.nextLine();
+    System.out.println(cadenaA01 + " => " + g3_GrafoyAutomata1.validar(cadenaA01));
+        
+        // A02) Automatas para validar: ab+ca
+        System.out.println("\n--- A02: Validar ab+ca ---");
+        System.out.print("Ingrese cadena: ");
+        String cadenaA02 = ingresoDatos.nextLine();
+    System.out.println(cadenaA02 + " => " + g3_GrafoyAutomata2.validar(cadenaA02));
+        
+        // A03) Automatas para validar: a+/b+/c+
+        System.out.println("\n--- A03: Validar a+/b+/c+ ---");
+        System.out.print("Ingrese cadena: ");
+        String cadenaA03 = ingresoDatos.nextLine();
+    System.out.println(cadenaA03 + " => " + g3_GrafoyAutomata3.validar(cadenaA03));
+        
+        // A04) Automatas para validar: 1+/0+1*
+        System.out.println("\n--- A04: Validar 1+/0+1* ---");
+        System.out.print("Ingrese cadena: ");
+        String cadenaA04 = ingresoDatos.nextLine();
+    System.out.println(cadenaA04 + " => " + g3_GrafoyAutomata4.validar(cadenaA04));
+        
+        // A05) Validar número decimal
+        System.out.println("\n--- A05: Validar número decimal ---");
+        System.out.print("Ingrese número: ");
+        String numeroDecimal = ingresoDatos.nextLine();
+    System.out.println(numeroDecimal + " => " + g3_GrafoyAutomata5.validar(numeroDecimal));
+        
+        // A06) Validar declaración de variables en Java
+        System.out.println("\n--- A06: Validar variable Java ---");
+        System.out.print("Ingrese variable: ");
+        String variable = ingresoDatos.nextLine();
+    System.out.println(variable + " => " + g3_GrafoyAutomata6.validar(variable));
+        
+        // A07) Validar clave segura
+        System.out.println("\n--- A07: Validar clave segura ---");
+        System.out.print("Ingrese clave: ");
+        String clave = ingresoDatos.nextLine();
+    System.out.println(clave + " => " + g3_GrafoyAutomata7.validar(clave));
+        
+        System.out.println("\n--------- RECURSION -----------");
+        
+    // R01) Factorial
+    System.out.println("\n--- R01: Factorial ---");
+    System.out.print("Ingrese el numero para calcular factorial: ");
+    int fact_n = Integer.parseInt(ingresoDatos.nextLine());
+    System.out.println("Factorial de " + fact_n + " = " + g3_recursion1.factorial(fact_n));
+        
+        // R02) Suma recursiva
+        System.out.println("\n--- R02: Suma ---");
+        System.out.print("Ingrese el primer número: ");
+        int suma_a = Integer.parseInt(ingresoDatos.nextLine());
+        System.out.print("Ingrese el segundo número: ");
+        int suma_b = Integer.parseInt(ingresoDatos.nextLine());
+        System.out.println("La suma es: " + g3_recursion2.suma(suma_a, suma_b));
+        
+        // R03) Multiplicación recursiva
+        System.out.println("\n--- R03: Multiplicación ---");
+        System.out.print("Ingrese el primer número: ");
+        int mult_a = Integer.parseInt(ingresoDatos.nextLine());
+        System.out.print("Ingrese el segundo número: ");
+        int mult_b = Integer.parseInt(ingresoDatos.nextLine());
+        System.out.println("El producto es: " + g3_recursion3.multiplicacion(mult_a, mult_b));
+        
+        // R04) Potencia recursiva
+        System.out.println("\n--- R04: Potencia ---");
+        System.out.print("Ingrese la base: ");
+        int pot_a = Integer.parseInt(ingresoDatos.nextLine());
+        System.out.print("Ingrese el exponente: ");
+        int pot_b = Integer.parseInt(ingresoDatos.nextLine());
+        System.out.println(pot_a + " elevado a " + pot_b + " = " + g3_recursion4.potencia(pot_a, pot_b));
+        
+        // R05) Conteo progresivo
+        System.out.println("\n--- R05: Conteo progresivo ---");
+        System.out.print("Ingrese el número hasta donde contar: ");
+        int numProgresivo = Integer.parseInt(ingresoDatos.nextLine());
+        g3_recursion5.conteoProgresivoHasta(numProgresivo);
+        System.out.println();
+        
+        // R06) Conteo regresivo
+        System.out.println("\n--- R06: Conteo regresivo ---");
+        System.out.print("Ingrese el número desde donde contar hacia atrás: ");
+        int numRegresivo = Integer.parseInt(ingresoDatos.nextLine());
+        g3_recursion6.conteoRegresivo(numRegresivo);
+        System.out.println(); 
+              ingresoDatos.close();
     }
 }
