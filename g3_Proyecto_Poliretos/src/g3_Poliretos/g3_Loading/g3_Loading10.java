@@ -10,7 +10,7 @@ public class g3_Loading10 {
 
     public void g3_L10_for() {
         Random rand = new Random();
-        double totalKb = 10 + (100 - 10) * rand.nextDouble(); 
+        double totalKb = 10 + (100 - 10) * rand.nextDouble(); // Random 10-100
         String fileName = "ArchivoYari-win_amd64.whl";
         int barLength = 20;
         String GREEN = "\u001B[32m";
