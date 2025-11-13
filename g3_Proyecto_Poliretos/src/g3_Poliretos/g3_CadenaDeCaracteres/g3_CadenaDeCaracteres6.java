@@ -51,6 +51,12 @@ public class g3_CadenaDeCaracteres6 {
         }
     }
     
+    // Verifica si un carácter es consonante
+    private boolean esConsonante(char c) {
+        char lower = Character.toLowerCase(c);
+        return Character.isLetter(c) && "bcdfghjklmnpqrstvwxyzñ".indexOf(lower) != -1;
+    }
+    
     public void Cadena6(Scanner ingresoDatos) {
         // Solicitar frase con validación
         String frase = solicitarTextoValido(ingresoDatos, "Ingrese una frase: ");
@@ -62,11 +68,11 @@ public class g3_CadenaDeCaracteres6 {
         for (int i = frase.length() - 1; i >= 0; i--) {
             char c = frase.charAt(i);
             
-            // Si es letra, convertir a mayúscula (incluyendo tildes)
-            if (Character.isLetter(c) || c == 'á' || c == 'é' || c == 'í' || c == 'ó' || c == 'ú' || c == 'ñ') {
+            // Si es consonante, convertir a mayúscula
+            if (esConsonante(c)) {
                 resultadoFor += convertirMayuscula(c);
             } else {
-                // Si es espacio u otro carácter, mantener como está
+                // Si es vocal, espacio u otro carácter, mantener como está
                 resultadoFor += c;
             }
         }
@@ -78,7 +84,7 @@ public class g3_CadenaDeCaracteres6 {
         while (j >= 0) {
             char c = frase.charAt(j);
             
-            if (Character.isLetter(c) || c == 'á' || c == 'é' || c == 'í' || c == 'ó' || c == 'ú' || c == 'ñ') {
+            if (esConsonante(c)) {
                 resultadoWhile += convertirMayuscula(c);
             } else {
                 resultadoWhile += c;
@@ -94,7 +100,7 @@ public class g3_CadenaDeCaracteres6 {
             do {
                 char c = frase.charAt(k);
                 
-                if (Character.isLetter(c) || c == 'á' || c == 'é' || c == 'í' || c == 'ó' || c == 'ú' || c == 'ñ') {
+                if (esConsonante(c)) {
                     resultadoDoWhile += convertirMayuscula(c);
                 } else {
                     resultadoDoWhile += c;

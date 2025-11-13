@@ -38,64 +38,55 @@ public class g3_CadenaDeCaracteres4 {
         return texto.trim();
     }
     
-    //Solicita y valida que el usuario ingrese una letra válida
-   
-    private char solicitarLetraValida(Scanner scanner) {
+    // Verifica si un carácter es consonante
+    private boolean esConsonante(char c) {
+        char lower = Character.toLowerCase(c);
+        return Character.isLetter(c) && "bcdfghjklmnpqrstvwxyzñ".indexOf(lower) != -1;
+    }
+    
+    // Solicita y valida que el usuario ingrese una consonante válida
+    private char solicitarConsonanteValida(Scanner scanner) {
         String letraInput;
         boolean esValido = false;
         
         do {
-            System.out.print("Ingrese una letra a eliminar: ");
+            System.out.print("Ingrese una consonante a eliminar: ");
             letraInput = scanner.nextLine();
             
             if (letraInput.trim().isEmpty()) {
                 System.out.println("Error: No puede dejar la línea vacía.");
             } else if (letraInput.length() != 1) {
-                System.out.println("Error: Debe ingresar solo una letra (un carácter).");
-            } else if (!letraInput.matches("[a-zA-ZáéíóúÁÉÍÓÚñÑ]")) {
-                System.out.println("Error: Solo se permiten letras. No ingrese números o símbolos.");
+                System.out.println("Error: Debe ingresar solo un carácter.");
+            } else if (!esConsonante(letraInput.charAt(0))) {
+                System.out.println("Error: Debe ingresar una consonante. Las vocales (a, e, i, o, u) no son válidas.");
             } else {
                 esValido = true;
                 return letraInput.charAt(0);
             }
         } while (!esValido);
         
-        return 'a'; // Esta línea nunca se alcanzará
-    }
-    
-    //Normaliza un carácter removiendo tildes para comparación
-     
-    private char normalizarCaracter(char c) {
-        char lower = Character.toLowerCase(c);
-        switch (lower) {
-            case 'á': return 'a';
-            case 'é': return 'e';
-            case 'í': return 'i';
-            case 'ó': return 'o';
-            case 'ú': return 'u';
-            default: return lower;
-        }
+        return 'b'; // Esta línea nunca se alcanzará
     }
     
     public void Cadena4(Scanner ingresoDatos) {
         // Solicitar frase con validación
         String frase = solicitarTextoValido(ingresoDatos, "Ingrese una frase: ");
         
-        // Solicitar letra con validación
-        char letra = solicitarLetraValida(ingresoDatos);
+        // Solicitar consonante con validación
+        char consonante = solicitarConsonanteValida(ingresoDatos);
         
         System.out.println("\n Frase original: " + frase);
-        System.out.println(" Letra a eliminar: " + letra + "\n");
+        System.out.println(" Consonante a eliminar: " + consonante + "\n");
         
-        // Normalizar la letra a buscar (eliminar tilde si tiene)
-        char letraNormalizada = normalizarCaracter(letra);
+        // Normalizar la consonante a buscar para comparación (minúscula)
+        char consonanteNormalizada = Character.toLowerCase(consonante);
         
         // Método con FOR
         String resultadoFor = "";
         for (int i = 0; i < frase.length(); i++) {
             char c = frase.charAt(i);
-            // Compara normalizando ambos caracteres (elimina tildes para comparar)
-            if (normalizarCaracter(c) != letraNormalizada) {
+            // Mantiene el carácter solo si NO coincide con la consonante a eliminar
+            if (Character.toLowerCase(c) != consonanteNormalizada) {
                 resultadoFor += c;
             }
         }
@@ -106,7 +97,7 @@ public class g3_CadenaDeCaracteres4 {
         int j = 0;
         while (j < frase.length()) {
             char c = frase.charAt(j);
-            if (normalizarCaracter(c) != letraNormalizada) {
+            if (Character.toLowerCase(c) != consonanteNormalizada) {
                 resultadoWhile += c;
             }
             j++;
@@ -119,7 +110,7 @@ public class g3_CadenaDeCaracteres4 {
         if (frase.length() > 0) {
             do {
                 char c = frase.charAt(k);
-                if (normalizarCaracter(c) != letraNormalizada) {
+                if (Character.toLowerCase(c) != consonanteNormalizada) {
                     resultadoDoWhile += c;
                 }
                 k++;

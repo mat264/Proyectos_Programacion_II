@@ -35,6 +35,12 @@ public class g3_CadenaDeCaracteres2 {
         return texto.trim();
     }
     
+    private boolean esConsonante(char c) {
+        char lower = Character.toLowerCase(c);
+        // Consonantes son todas las letras excepto a, e, i, o, u
+        return Character.isLetter(c) && "bcdfghjklmnpqrstvwxyzñ".indexOf(lower) != -1;
+    }
+    
     public void Cadena2() {
         Scanner ingresoDatos = new Scanner(System.in);
 
@@ -45,23 +51,23 @@ public class g3_CadenaDeCaracteres2 {
         int contadorFor = 0;
         for (int i = 0; i < cadena.length(); i++) {
             char c = cadena.charAt(i);
-            if (Character.isLetter(c)) {
+            if (esConsonante(c)) {
                 contadorFor++;
             }
         }
-        System.out.println("Conteo con FOR: tiene " + contadorFor + " letras");
+        System.out.println("Conteo con FOR: tiene " + contadorFor + " consonantes");
         
         // Conteo con WHILE
         int contadorWhile = 0;
         int j = 0;
         while (j < cadena.length()) {
             char c = cadena.charAt(j);
-            if (Character.isLetter(c)) {
+            if (esConsonante(c)) {
                 contadorWhile++;
             }
             j++;
         }
-        System.out.println("Conteo con WHILE: tiene " + contadorWhile + " letras");
+        System.out.println("Conteo con WHILE: tiene " + contadorWhile + " consonantes");
         
         // Conteo con DO WHILE
         int contadorDoWhile = 0;
@@ -69,13 +75,13 @@ public class g3_CadenaDeCaracteres2 {
         if (cadena.length() > 0) {
             do {
                 char c = cadena.charAt(k);
-                if (Character.isLetter(c)) {
+                if (esConsonante(c)) {
                     contadorDoWhile++;
                 }
                 k++;
             } while (k < cadena.length());
         }
-        System.out.println("Conteo con DO WHILE: tiene " + contadorDoWhile + " letras");
+        System.out.println("Conteo con DO WHILE: tiene " + contadorDoWhile + " consonantes");
         
     }
 }
