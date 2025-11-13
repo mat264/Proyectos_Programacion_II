@@ -2,15 +2,20 @@ package g3_Poliretos.g3_Loading;
 
 import java.util.Random;
 
+// Simula la descarga de un archivo mostrando KB descargados y una barra de progreso.
+// Usa colores ANSI para marcar completado y muestra for/while/do-while.
+
 public class g3_Loading10 {
 
+    // Pequeña pausa para animación
     private void delay() {
         try { Thread.sleep(50); } catch (InterruptedException e) {}
     }
 
+    // Simula descarga (for)
     public void g3_L10_for() {
         Random rand = new Random();
-        double totalKb = 10 + (100 - 10) * rand.nextDouble(); // Random 10-100
+        double totalKb = 10 + (100 - 10) * rand.nextDouble(); 
         String fileName = "ArchivoYari-win_amd64.whl";
         int barLength = 20;
         String GREEN = "\u001B[32m";
@@ -34,6 +39,7 @@ public class g3_Loading10 {
         System.out.println();
     }
 
+    // Simula descarga (while)
     public void g3_L10_while() {
         Random rand = new Random();
         double totalKb = 10 + (100 - 10) * rand.nextDouble();
@@ -62,6 +68,7 @@ public class g3_Loading10 {
         System.out.println();
     }
 
+    // Simula descarga (do-while)
     public void g3_L10_do_while() {
         Random rand = new Random();
         double totalKb = 10 + (100 - 10) * rand.nextDouble();
